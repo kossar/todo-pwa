@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>TODO</title>
+
+    <!-- PWA stuff for IOS -->
+    <link rel="icon" sizes="192x192" href="icons/android-launchericon-192-192.png">
+    <link rel="apple-touch-icon" href="icons/android-launchericon-192-192.png">
+    <link href="manifest.webmanifest" rel="manifest" />
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ToDo</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" class="priorities-link" style="display: none; margin-right: 20px;">Priorities</a></li>
+                <li><a href="#" class="greeting">Please log in</a></li>
+                <li><a href="#" class="log-out-link" style="display: none;">Log out</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="#" class="greeting">Please log in</a></li>
+                <li><a href="#" class="log-out-link" style="display: none;">Log out</a></li>
+                <li><a href="#" class="priorities-link" style="display: none;">Priorities</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div class="section no-pad-bot" style="display: none;" id="sw-update-banner">
+        <div class="container">
+            <h1 id="sw-update-element" class="header center orange-text">SW UPDATE CLick</h1>
+        </div>
+    </div>
+
+    <div class="container" id="main-container" style="margin-top: 2rem;">
+        <!-- <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>Categories</h5>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Category name" id="item-input" type="text" class="validate">
+                        <a href="#" id="item-input-add" class="secondary-content" style="margin-right: 24px;">
+                            <i class="material-icons prefix">add</i></a>
+                        <label for="item-input">Category</label>
+                    </div>
+                </div>
+            </li>
+        </ul> -->
+        <!--<ul class="collection" id="items">
+            <li class="collection-item">Loading...</li>
+
+             <li class="collection-item">
+                <div>
+                    <span>Item demo</span>
+                    <a href="#!" class="secondary-content">
+                        <i class="material-icons">done</i>
+                    </a>
+                    <a href="#!" class="secondary-content">
+                        <i class="material-icons">clear</i>
+                    </a>
+                </div>
+            </li> 
+        </ul>-->
+    </div>
+    <footer class="page-footer orange">
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3">Ott</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

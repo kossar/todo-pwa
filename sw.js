@@ -8,7 +8,7 @@ const CRegister = CApiBaseUrl + "Account/Register";
 const CTodoCategories = CApiBaseUrl + "TodoCategories/";
 const CTodoPriorities = CApiBaseUrl + "TodoPriorities/";
 const CTodoTasks = CApiBaseUrl + "TodoTasks/";
-const VERSION = 10;
+const VERSION = 12;
 const CACHE = "cache_" + VERSION;
 const openCategoryDb = async () => {
     var result = await openDB('cateogory-db', VERSION, {
